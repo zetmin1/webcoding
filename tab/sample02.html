@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <style>
+            body,div,a{margin:0px; padding:0px; text-decoration: none;}
+            ul{list-style-type: none;}
+            li{display: inline-block;}
+
+            .tabbox {min-width: 320px;max-width: 100%;margin: 0 auto;background: #ffffff;}
+	        .tabbox input[type=radio] + label, input[type=checkbox] + label{margin: 0;}
+            .tabbox section {display: none; padding: 20px 0 0;}
+
+            /*라디오버튼 숨김*/
+            .tabbox input {display: none;}
+            .tabbox label {width: 49%;display: inline-block;margin: 0 0 -1px;padding: 15px 0px; font-weight: 600;text-align: center;color: #bbb;background:#eee; border: 1px solid transparent;}
+
+            .tabbox label:hover {color: #2e9cdf; cursor: pointer;}
+
+            /*input 클릭시, label 스타일*/
+            .tabbox input:checked + label {color: #fff;background: #2e9cdf;}
+
+            .tabbox #tab1:checked ~ #content1,
+            #tab2:checked ~ #content2 {display: block;}
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="tabbox">
+            <input id="tab1" type="radio" name="tabs" checked=""> <!--디폴트 메뉴-->
+            <label for="tab1">시설소개</label>
+        
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">장비소개</label>
+        
+         
+            <section id="content1">
+                1
+            </section>
+        
+            <section id="content2">
+                2
+            </section>
+        
+        
+        </div>
+
+    
+    </body>
+</html>
