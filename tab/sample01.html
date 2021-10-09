@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <style>
+            body,div,a{margin:0px; padding:0px; text-decoration: none;}
+            ul{list-style-type: none;}
+            li{display: inline-block;}
+            .s2{margin:0 auto; display: block; width:1200px; background: #ffffff;}
+
+            /* 탭박스 */
+            #tabbox{position:relative;padding:0px;}
+            #tabbox .tabmnu{margin-bottom:30px;text-align:center;font-size:0}
+            #tabbox .tabmnu a{display:inline-block;width:195px;height:50px;line-height:50px;background-color:#ffffff;font-size:18px;text-align:center;color:#656565;}
+            /*#tabbox .tabmnu a:nth-child(2){border-left:none;border-right:none}*/
+            #tabbox .tabmnu a.active{background-color:#734391;color:#fff}
+
+            #tabbox .tabcontent1 ul li{width:273px; height:509px; margin-left:14px;margin-bottom:14px;}
+            #tabbox .tabcontent1 ul li:nth-child(4n+1){margin-left:20px}
+            #tabbox .tabcontent1 ul li a{display:block;overflow:hidden;border:1px solid #dcdcdc;font-size:0;}
+            #tabbox .tabcontent1 ul li a img{-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;-o-transition:.3s ease-in-out;transition:.3s ease-in-out;}
+            #tabbox .tabcontent1 ul li a:hover{border:1px solid #4560d3;}
+            #tabbox .tabcontent1 ul li a:hover img{transform:scale(1.1)}
+            #tabbox .tabcontent1 ul li .box .img {width:273px; height:369px; overflow: hidden;}
+            #tabbox .tabcontent1 ul li .box .info {width:273px; height:140px; background-color: #ffffff; position:relative}
+            #tabbox .tabcontent1 ul li .box .info .tit{top:20px; left:25px; position: absolute; width:100%; height:50px; color:#606060; font-size:15px;}
+            #tabbox .tabcontent1 ul li .box .info .price{top:80px; left:25px; position: absolute; width:100%; height:50px; color:#734391; font-size:17px; font-weight: bold;}
+
+            #tabbox .tabcontent2 ul li{width:273px; height:509px; margin-left:14px;margin-bottom:14px;}
+            #tabbox .tabcontent2 ul li:nth-child(4n+1){margin-left:20px}
+            #tabbox .tabcontent2 ul li a{display:block;overflow:hidden;border:1px solid #dcdcdc;font-size:0;}
+            #tabbox .tabcontent2 ul li a img{-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;-o-transition:.3s ease-in-out;transition:.3s ease-in-out;}
+            #tabbox .tabcontent2 ul li a:hover{border:1px solid #4560d3;}
+            #tabbox .tabcontent2 ul li a:hover img{transform:scale(1.2)}
+            #tabbox .tabcontent2 ul li .box .img {width:273px; height:369px; overflow: hidden;}
+            #tabbox .tabcontent2 ul li .box .info {width:273px; height:140px; background-color: #ffffff; position:relative}
+            #tabbox .tabcontent2 ul li .box .info .tit{top:20px; left:25px; position: absolute; width:100%; height:50px; color:#606060; font-size:15px;}
+            #tabbox .tabcontent2 ul li .box .info .price{top:80px; left:25px; position: absolute; width:100%; height:50px; color:#734391; font-size:17px; font-weight: bold;;}
+
+
+        </style>
+    </head>
+    <body>
+
+        <section id="tabbox">
+            <div class="respon">
+                <div class="tabmnu">
+                    <a href="#;" class="tabgo tablist1 active">원데이 클래스</a>
+                    <a href="#;" class="tabgo tablist2">정규 클래스</a>
+                </div>
+                <div class="socialconbox tabcontent1" style="display: block;">
+                    <ul class="s2">
+                            <li>
+                                <a href="#" class="box">
+                                    <div class="img"><img src="../images/main/sample02.png" class="bg"></div>
+                                    <div class="info">
+                                        <div class="tit">샐러드 맛으로 맛과 양 모두 즐기는<br class="pcl">샐러드 레시피 & 드레싱 클래스</div>
+                                        <div class="price">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="box">
+                                    <div class="img"><img src="../images/main/sample02.png" class="bg"></div>
+                                    <div class="info">
+                                        <div class="tit">샐러드 맛으로 맛과 양 모두 즐기는<br class="pcl">샐러드 레시피 & 드레싱 클래스</div>
+                                        <div class="price">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="box">
+                                    <div class="img"><img src="../images/main/sample02.png" class="bg"></div>
+                                    <div class="info">
+                                        <div class="tit">샐러드 맛으로 맛과 양 모두 즐기는<br class="pcl">샐러드 레시피 & 드레싱 클래스</div>
+                                        <div class="price">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="box">
+                                    <div class="img"><img src="../images/main/sample02.png" class="bg"></div>
+                                    <div class="info">
+                                        <div class="tit">샐러드 맛으로 맛과 양 모두 즐기는<br class="pcl">샐러드 레시피 & 드레싱 클래스</div>
+                                        <div class="price">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>	
+                </div>
+                <div class="socialconbox tabcontent2" style="display: none;">
+                    <ul class="s2">
+                            <li>
+                                <a href="#" class="box">
+                                    <div class="img"><img src="../images/main/sample03.png" class="bg"></div>
+                                    <div class="info">
+                                        <div class="tit">샐러드 맛으로 맛과 양 모두 즐기는<br class="pcl">샐러드 레시피 & 드레싱 클래스</div>
+                                        <div class="price">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="box">
+                                    <div class="img"><img src="../images/main/sample03.png" class="bg"></div>
+                                    <div class="info">
+                                        <div class="tit">샐러드 맛으로 맛과 양 모두 즐기는<br class="pcl">샐러드 레시피 & 드레싱 클래스</div>
+                                        <div class="price">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="box">
+                                    <div class="img"><img src="../images/main/sample03.png" class="bg"></div>
+                                    <div class="info">
+                                        <div class="tit">샐러드 맛으로 맛과 양 모두 즐기는<br class="pcl">샐러드 레시피 & 드레싱 클래스</div>
+                                        <div class="price">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="box">
+                                    <div class="img"><img src="../images/main/sample03.png" class="bg"></div>
+                                    <div class="info">
+                                        <div class="tit">샐러드 맛으로 맛과 양 모두 즐기는<br class="pcl">샐러드 레시피 & 드레싱 클래스</div>
+                                        <div class="price">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>	
+                </div>
+
+                <script>
+                    $('#tabbox .tabmnu a.tablist1').click(function(){
+                        $('#tabbox .tabmnu a').removeClass('active');
+                        $(this).addClass('active');
+
+                        $('.socialconbox').hide();
+                        $('.socialconbox.tabcontent1').show();
+                    });
+
+                    $('#tabbox .tabmnu a.tablist2').click(function(){
+                        $('#tabbox .tabmnu a').removeClass('active');
+                        $(this).addClass('active');
+
+                        $('.socialconbox').hide();
+                        $('.socialconbox.tabcontent2').show();
+
+                    });
+
+                </script>
+            </div>
+    </section>			
+    
+    </body>
+</html>
