@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<script type="text/javascript" src="/js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="/css/content.css?time=1635293542632">
+<script type="text/javascript" src="/js/efusioni.js?time=1635293542632"></script>
+<script type="text/javascript" src="/js/motionSource.js?time=1635293542632"></script>
+<script type="text/javascript" src="/js/ui.js?time=1635293542632"></script>
+
+
+<script>
+$(function(){
+	scrollMoveTab(".scrollMoveTab");
+	var introPlayer = new ef.visual.Player({
+		mode : "frame",
+		frame : introSource,
+		//reverse : true,
+		length : 31,
+		width : 1200,
+		height : 260,
+		container : $("#introMotion"),
+		duration : 50
+	});
+	$(window).scroll(function(){
+		var num = $("#introMotion").offset().top - ($(window).height() - $("#introMotion").height());
+		if($(this).scrollTop() > num && !$("#introMotion").hasClass("ing")){
+			$("#introMotion").addClass("ing");
+			introPlayer.play();
+		} else if($(this).scrollTop() == 0){
+			$("#introMotion").removeClass("ing");
+			introPlayer.stop();
+		}
+
+	});
+	
+	
+	
+	
+});
+</script>
+</head>
+<body>
+<!-- layerPopup -->
+
+<!-- //layerPopup -->
+<div id="wrapper">
+	
+
+
+<div id="header"><div class="contWrap">
+	<div id="gnbOverBg"></div>
+	<h1><a href="/index.do">웅진씽크빅</a></h1> <!-- 20210114 수정 -->
+	<div id="gnbArea">
+		<div id="gnbMotionArea"></div>
+		<ul id="gnb">
+			<li class="active"><a href="/company/introduce.do">회사소개</a>
+				<!-- 20201209 삭제 <ul>
+					<li class="active"><a href="/company/introduce.do">회사소개</a></li>
+					<li class=""><a href="/company/management.do">경영정신</a></li>
+					<li class=""><a href="/company/history.do">연혁</a></li>
+					<li class=""><a href="/culture/singi.do">신기문화</a></li>
+					<li class=""><a href="/culture/contribution.do">사회공헌</a></li>
+					<li class=""><a href="/culture/ethical.do">윤리경영</a></li>
+				</ul> -->
+				<!-- 20201209 추가 -->
+				<ul>
+					<li class="active"><a href="/company/introduce.do">기업개요</a></li>
+					<li class=""><a href="/company/history.do">연혁</a></li>
+					<li class=""><a href="/company/management.do">경영정신</a></li>
+					<li class=""><a href="/culture/singi.do">신기문화</a></li>
+					<li class=""><a href="/company/introduce.do#ci">CI</a></li>
+				</ul>
+				<!-- //20201209 추가 -->
+			</li>
+			<li class=""><a href="/culture/contribution.do">ESG경영</a> <!-- 20210223 수정 -->
+				<ul>
+									
+				 
+				 	<li class=""><a href="/culture/environment.do">환경경영</a></li><!-- 20210107 추가 -->
+					<li class=""><a href="/culture/contribution.do">사회공헌</a></li> <!-- 20201209 추가 -->
+					<li class=""><a href="/culture/ethical.do">윤리경영</a></li> <!-- 20201209 추가 -->
+				</ul>
+			</li>
+			<li class=""><a href="/invest/finance/year.do">투자정보</a>
+				<ul>
+					<!-- 20201209 삭제 <li class=""><a href="/invest/companyinfo.do">기업정보</a></li> -->
+					<li class="active"><a href="/invest/finance/year.do">재무정보</a></li>
+					<li class=""><a href="/invest/structure.do">기업지배구조</a></li>
+					<li class=""><a href="/invest/ir.do">IR 자료실</a></li>
+					<li class=""><a href="/invest/notice.do">공고</a></li>
+				</ul>
+			</li>
+			<li class=""><a href="/recruit/rightPeople.do">인재채용</a>
+				<ul>
+					<li class="active"><a href="/recruit/rightPeople.do">인재상</a></li>
+					<li class=""><a href="/recruit/development.do">인재육성</a></li>
+					<li class=""><a href="/recruit/welfare.do">복리후생</a></li>
+					<li class=""><a href="/recruit/duty.do">직무소개</a></li>
+					<li class=""><a href="https://thinkbig.recruiter.co.kr/appsite/company/index" target="_blank">입사지원</a></li><!-- 20210331 수정 -->
+				</ul>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="util">
+		<!-- 20210202 수정 -->
+		<a href="http://www.wjthinkbig.com/brand/brand_02.do" class="thinkbig" target="_blank" title="새창"><span>웅진씽크빅</span></a>
+		<a href="http://www.wjthinkbig.com/brand/brand_01.do" class="bookclub" target="_blank" title="새창"><span>웅진북클럽</span></a>
+		<a href="https://smartall.wjthinkbig.com/index" class="smartall" target="_blank" title="새창"><span>웅진스마트올</span></a>
+		<!-- <a href="javascript:openteacher();" class="teather"><span>선생님 지원</span></a>
+		<a href="http://www.wjthinkbig.com/customer/counsel/reading.do" class="counsel" target="_blank" title="새창"><span>상담신청</span></a> -->
+		<!-- //20210202 수정 -->
+		<a href="/en/index.do?lang=en" class="lang">ENGLISH</a>
+	</div>
+	
+</div></div><!-- //header -->
+
+	
+		
+		
+		
+	
+
+
+
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/js/get_location.js"></script>
+
+	
+
+
+</div><!-- //wrapper -->
+</body>
+</html>
+
+https://company.wjthinkbig.com/company/history.do

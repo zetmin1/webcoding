@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <style>
+          
+
+          @media (max-width: 1199px) {
+            .wave-area {
+                display: none
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .wave-area {
+                position: relative;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+                clear: both;
+                z-index: -1
+            }
+
+            .wave-area span {
+                display: block;
+                height: 100vh;
+                max-height: 950px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                overflow: hidden
+            }
+
+            .wave-area i {
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                width: 100%;
+                height: 100vh;
+                max-height: 950px;
+                background: 0 bottom repeat-x;
+                background-size: 100% auto;
+                opacity: 0.07
+            }
+
+            .wave-area i.wave1 {
+                width: 3726px;
+                -webkit-animation: wave 30s linear infinite;
+                animation: wave 30s linear infinite;
+                background-image: url(https://www.kdhc.co.kr/static/kdhc/img/main/main1.png);
+                background-size: 1863px 168px
+            }
+
+            .wave-area i.wave2 {
+                width: 7000px;
+                -webkit-animation: wave 110s linear infinite;
+                animation: wave 110s linear infinite;
+                background-image: url(https://www.kdhc.co.kr/static/kdhc/img/main/main2.png);
+                background-size: 3500px 413px
+            }
+
+            .wave-area i.wave3 {
+                width: 4000px;
+                -webkit-animation: wave 30s linear infinite;
+                animation: wave 30s linear infinite;
+                background-image: url(https://www.kdhc.co.kr/static/kdhc/img/main/main3.png);
+                background-size: 2000px 502px
+            }
+        }
+
+
+        @-webkit-keyframes wave {
+            0% {
+                -webkit-transform: translateX(0) scaleY(1);
+                transform: translateX(0) scaleY(1)
+            }
+
+            50% {
+                -webkit-transform: translateX(-25%) scaleY(1);
+                transform: translateX(-25%) scaleY(1)
+            }
+
+            100% {
+                -webkit-transform: translateX(-50%) scaleY(1);
+                transform: translateX(-50%) scaleY(1)
+            }
+        }
+
+        @keyframes wave {
+            0% {
+                -webkit-transform: translateX(0) scaleY(1);
+                transform: translateX(0) scaleY(1)
+            }
+
+            50% {
+                -webkit-transform: translateX(-25%) scaleY(1);
+                transform: translateX(-25%) scaleY(1)
+            }
+
+            100% {
+                -webkit-transform: translateX(-50%) scaleY(1);
+                transform: translateX(-50%) scaleY(1)
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="wave-area"> <span> <i class="wave1"></i><i class="wave2"></i><i
+            class="wave3"></i></span></div>
+    
+    </body>
+</html>
